@@ -1,0 +1,27 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is a react app by Mandeep Baghel",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandeepb29/namaste-react.git"
+  },
+  "keywords": [
+    "react",
+    "namaste react",
+    "mandeepbaghel"
+  ],
+  "author": "Mandeep Baghel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandeepb29/namaste-react/issues"
+  },
+  "homepage": "https://github.com/mandeepb29/namaste-react#readme",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}
