@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is a react app by Mandeep Baghel",
   "scripts": {
+    "start":"parcel ReactApp/index.html",
+    "build":"parcel build ReactApp/index.html",
     "test": "jest"
   },
   "repository": {
