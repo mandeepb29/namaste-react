@@ -71,7 +71,7 @@ This chain of dependencies is called "Transitive Dependencies". Node modules con
 
 ### Running the parcel
 
-We can run parcel using the npx command (Node Package eXecutable), which allow us to execute any package command without installing it and adding it into our package.json, which is the case while using npm.
+We can run parcel using the npx command (Node Package eXecutable), which allow us to execute any package command without installing it and adding it into our package.json, which is not the case while using npm.
 
 ```
 npx parcel index.html
