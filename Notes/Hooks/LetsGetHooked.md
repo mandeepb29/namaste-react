@@ -34,7 +34,7 @@ Hooks are normal JS functions which are provided as utility by REACT. These func
 
 this is used to create a state variable. A state variable is a special kind of variable, which is when updated the react re-renders the UI. OR we can say when state variable changes react re-renders the UI. 
 
-**Note: React is very optimized in rerendering the DOM, it uses virtual DOM for this which we will learn in coming function, but the main power of react comes due to this very fast rendering logic.**
+**Note: React is very optimized in rerendering the DOM, it uses virtual DOM, but the main power of react comes due to this very fast rendering algorithm (React Fiber).**
 
 
 **Fun fact: The react name is based on being reactive to the changes in the data. The UI should be reactive to the data it displays**
@@ -55,5 +55,12 @@ REACT MAIN SELLING POINT - OPTMIZED RERENDERING USING REACT FIBER ALGORITHM.
 - Virtual DOM is a Object Representation of Actual DOM. 
 - Whenever the state changes a new virtual dom is generated as per the new state.
 - Then react compares the difference between the old and new virtual DOM. This step is done in very optmized way in react.
-- After calculating the differences, React changes the actual DOM according to it. So, not the whole DOM is scrapped and updated, just the existing one is modified as per required.
+- After calculating the differences, React changes the actual DOM according to it. So, not the whole DOM is scrapped and updated, just the existing one is modified as per differences calculated.
 
+** Things to keep in mind while using useState:
+
+- Dont use useState ->
+
+1. outside functioncal component : purpose of useState is to create a state variable for the func component. declaring outside gives us the error.
+2. inside a loop -> same state variable cannot be created again and again by same name, even if name changes, state dynamically created by code can be difficult to maintain in component's life cycle
+3. inside conditional statements -> state variable creted conditionally, can lead to a inconsistent component state, leading to more errors. For eg. A state variables used in code, but not created.
